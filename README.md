@@ -1,4 +1,6 @@
-## Implementation of Creational Design Patterns in Weapon Construction
+# War Factory (Creational Patterns) - Strategy Game
+
+## Implementation of Creational Design Patterns in Weapon Construction 
 
 ### Initialization and Blueprint Management
 
@@ -233,9 +235,7 @@ The system first checks if the blueprint for the specified weapon family and ver
 ```csharp
 IWeaponBlueprint blueprint = BlueprintRepositoryRND.Instance.GetBlueprint(family, version);
 
-if (blueprint == null)
-
- {
+if (blueprint == null) {
     throw new ArgumentException("Invalid weapon version");
 }
 ```
